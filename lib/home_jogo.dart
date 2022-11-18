@@ -11,7 +11,7 @@ class HomeJogo extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<HomeJogo> {
-  var _imagemApp = AssetImage("imagens/padrao.png");
+  var _imagemApp = AssetImage("assets/images/padrao.png");
   var _mensagem = "Escolha uma opção abaixo";
 
   void _opcaoSelecionada(String escolhaUsuario) {
@@ -23,17 +23,17 @@ class _MyHomePageState extends State<HomeJogo> {
     switch (escolhaApp) {
       case "pedra":
         setState(() {
-          _imagemApp = AssetImage("imagens/pedra.png");
+          _imagemApp = AssetImage("assets/images/pedra.png");
         });
         break;
       case "papel":
         setState(() {
-          _imagemApp = AssetImage("imagens/papel.png");
+          _imagemApp = AssetImage("assets/images/papel.png");
         });
         break;
       case "tesoura":
         setState(() {
-          _imagemApp = AssetImage("imagens/tesoura.png");
+          _imagemApp = AssetImage("assets/images/tesoura.png");
         });
         break;
     }
